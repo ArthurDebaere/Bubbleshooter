@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane fx:id="paneBackground" prefHeight="600" prefWidth="430.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <Label fx:id="lblHeader" alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="108.0" prefWidth="424.0" styleClass="lblHeaderTitle" textAlignment="CENTER" textFill="WHITE">
+                </Label>
+                <ImageView fx:id="imgContrainer" fitHeight="455.0" fitWidth="340.0" layoutX="45.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@res/Screens/Difficulty.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgBack" fitHeight="78.0" fitWidth="53.0" layoutX="20.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@res/Buttons/BackButton.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Button fx:id="btnBacktoMain" layoutX="15.0" layoutY="531.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="55.0" prefWidth="60.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnEasy" layoutX="138.0" layoutY="234.0" mnemonicParsing="false" onAction="#startSPgameEASY" prefHeight="55.0" prefWidth="151.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnMedium" layoutX="138.0" layoutY="300.0" mnemonicParsing="false" onAction="#startSPgameMEDIUM" prefHeight="55.0" prefWidth="151.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnHard" layoutX="140.0" layoutY="361.0" mnemonicParsing="false" onAction="#startSPgameHARD" prefHeight="55.0" prefWidth="151.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

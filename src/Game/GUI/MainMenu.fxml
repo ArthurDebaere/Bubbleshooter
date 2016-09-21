@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="600" prefWidth="430.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <Label alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="109.0" prefWidth="424.0" textAlignment="CENTER" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="lblHeaderTitle" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Label>
+                <Button fx:id="btnSP" layoutX="110.0" layoutY="164.0" mnemonicParsing="false" onAction="#btnSP_click" prefHeight="70.0" prefWidth="210.0" textAlignment="CENTER" textFill="#ffffff00">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="btnSinglePlayer" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Button>
+                <Button fx:id="btnMP" layoutX="110.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnMP_Click" prefHeight="70.0" prefWidth="210.0" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="btnMultiPlayer" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Button>
+                <Button fx:id="btnRankings" layoutX="110.0" onAction="#btnRanking_Click" layoutY="343.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="210.0" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="btnRankings" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Button>
+            <Label fx:id="lblSettingsNormal" layoutX="20.0" layoutY="521.0" prefHeight="70.0" prefWidth="67.0">
+               <styleClass>
+                  <String fx:value="settingsNormal" />
+                  <String fx:value="makeTransparant" />
+               </styleClass>
+            </Label>
+            <Label fx:id="lblSettingsExtended" layoutX="16.0" layoutY="304.0" prefHeight="287.0" prefWidth="75.0">
+               <styleClass>
+                  <String fx:value="settingsExtended" />
+                  <String fx:value="makeTransparant" />
+                  <String fx:value="hidden" />
+               </styleClass>
+            </Label>
+            <Button fx:id="btnSettings" layoutX="20.0" layoutY="520.0" mnemonicParsing="false" onAction="#btnSettings_Click" prefHeight="70.0" prefWidth="67.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnSound" layoutX="22.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleToggleSettings" prefHeight="2.0" prefWidth="59.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="makeTransparant" />
+                  <String fx:value="hidden" />
+               </styleClass>
+            </Button>
+            <Button fx:id="btnMusic" layoutX="22.0" layoutY="378.0" mnemonicParsing="false" onAction="#handleToggleSettings" prefHeight="2.0" prefWidth="59.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="makeTransparant" />
+                  <String fx:value="hidden" />
+               </styleClass>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btnControls" layoutX="22.0" layoutY="438.0" mnemonicParsing="false" onAction="#gotoKeymaps" prefHeight="2.0" prefWidth="59.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="makeTransparant" />
+                  <String fx:value="hidden" />
+               </styleClass>
+            </Button>
+            <ImageView fx:id="btnLogout" fitHeight="36.0" fitWidth="112.0" layoutX="304.0" layoutY="549.0" onMouseClicked="#bttnLogout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/Buttons/LogoutButton.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

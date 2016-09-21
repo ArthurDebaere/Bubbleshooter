@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="600" prefWidth="430.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <Label alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="108.0" prefWidth="424.0" styleClass="lblHeaderTitle" textAlignment="CENTER" textFill="WHITE">
+                </Label>
+            <ImageView fitHeight="369.0" fitWidth="324.0" layoutX="53.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GUI/res/Screens/Keymaps.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSave" layoutX="145.0" layoutY="415.0" mnemonicParsing="false" onAction="#saveControls" prefHeight="53.0" prefWidth="149.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnBacktoMain" layoutX="14.0" layoutY="520.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="72.0" prefWidth="77.0">
+               <styleClass>
+                  <String fx:value="backButton" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Button>
+            <Label fx:id="lblAimLeft" layoutX="268.0" layoutY="241.0" onMouseClicked="#changeKeymaps" styleClass="controlLabels" text="LEFT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label fx:id="lblAimRight" layoutX="268.0" layoutY="288.0" onMouseClicked="#changeKeymaps" styleClass="controlLabels" text="RIGHT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <Label fx:id="lblShoot" layoutX="268.0" layoutY="335.0" onMouseClicked="#changeKeymaps" styleClass="controlLabels" text="UP">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="600" prefWidth="430.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <Label alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="108.0" prefWidth="424.0" styleClass="lblHeaderTitle" textAlignment="CENTER" textFill="WHITE">
+                </Label>
+            <ImageView fitHeight="78.0" fitWidth="53.0" layoutX="3.0" layoutY="545.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/Buttons/BackButton.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+                <Button fx:id="btnBacktoMain" layoutX="-2.0" layoutY="545.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="55.0" prefWidth="60.0" styleClass="makeTransparant" />
+            <ImageView fitHeight="455.0" fitWidth="340.0" layoutX="45.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/Screens/Ranking.png" />
+               </image>
+            </ImageView>
+            <TabPane fx:id="tabRankings" layoutX="55.0" layoutY="184.0" prefHeight="352.0" prefWidth="320.0" styleClass="makeTransparant" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab closable="false" style="-fx-font-size: 12px;">
+                     <content>
+                        <ListView fx:id="listRankingSingle" prefHeight="341.0" prefWidth="302.0" style="-fx-font-size: 14px;" />
+                     </content>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@res/Screens/SingleplayerTab.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+                <Tab style="-fx-font-size: 12px;">
+                     <content>
+                        <ListView fx:id="listRankingMulti" prefHeight="341.0" prefWidth="302.0" style="-fx-font-size: 14px;" />
+                     </content>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@res/Screens/MultiplayerTab.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

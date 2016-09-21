@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane maxHeight="800.0" maxWidth="10000.0" prefHeight="800.0" prefWidth="1000.0" styleClass="gamePane" stylesheets="@../GUI/res/Style.css">
+            <effect>
+                <Blend />
+            </effect>
+         <children>
+            <ImageView fx:id="imgBackground" fitHeight="819.0" fitWidth="1624.0" layoutX="-422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/gameBackground.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPointsContainer" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="714.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/Screens/PointContainer.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblScorePlayer1" alignment="CENTER_RIGHT" layoutX="210.0" layoutY="738.0" prefHeight="35.0" prefWidth="111.0" text="0 pts">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+             <Label fx:id="lblTimeLeft" alignment="CENTER_RIGHT" layoutX="310.0" layoutY="738.0" prefHeight="35.0" prefWidth="111.0" text="00:00">
+                 <font>
+                     <Font size="25.0" />
+                 </font>
+             </Label>
+         </children>
+        </Pane>
+    </children>
+</GridPane>

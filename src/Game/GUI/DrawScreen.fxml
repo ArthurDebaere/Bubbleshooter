@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="201.0" prefWidth="384.0" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane maxWidth="410.0" prefHeight="210.0" prefWidth="410.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <ImageView fitHeight="202.0" fitWidth="388.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@res/Screens/DrawScreen.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="btnBackToMain" layoutX="43.0" layoutY="139.0" mnemonicParsing="false" onAction="#backToMainfromDialog" prefHeight="52.0" prefWidth="59.0" styleClass="makeTransparant">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Button fx:id="btnReplay" layoutX="281.0" layoutY="139.0" mnemonicParsing="false" onAction="#btnReset_click" prefHeight="52.0" prefWidth="59.0" styleClass="makeTransparant">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

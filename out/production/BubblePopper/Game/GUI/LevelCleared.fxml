@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="203.0" prefWidth="319.0" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane maxWidth="404.0" prefHeight="204.0" prefWidth="322.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+            <ImageView fitHeight="202.0" fitWidth="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GUI/res/Screens/LevelCleared.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBackToMain" layoutX="54.0" layoutY="147.0" mnemonicParsing="false" onAction="#backToMainfromDialog" prefHeight="52.0" prefWidth="59.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnReplay" layoutX="130.0" layoutY="147.0" mnemonicParsing="false" onAction="#btnReset_click" prefHeight="52.0" prefWidth="59.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnNext" layoutX="206.0" layoutY="147.0" mnemonicParsing="false" onAction="#backToMainfromDialog" prefHeight="52.0" prefWidth="59.0" styleClass="makeTransparant" />
+            <Label fx:id="lblScore" layoutX="160.0" layoutY="71.0" prefHeight="41.0" prefWidth="115.0" text="Label" />
+            <Label fx:id="lblHighscore" layoutX="160.0" layoutY="112.0" prefHeight="35.0" prefWidth="115.0" text="Label" />
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>

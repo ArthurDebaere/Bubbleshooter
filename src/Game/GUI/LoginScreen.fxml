@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../GUI/res/Style.css" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.GUI.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="600" prefWidth="430.0" stylesheets="@../GUI/res/Style.css">
+            <children>
+                <Label alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="108.0" prefWidth="424.0" textAlignment="CENTER" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="lblHeaderTitle" />
+                  <String fx:value="makeTransparant" />
+               </styleClass></Label>
+                <ImageView fitHeight="369.0" fitWidth="324.0" layoutX="53.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../GUI/res/Screens/LoginScreen.png" />
+                    </image>
+                </ImageView>
+            <TextField fx:id="txtUsername" layoutX="92.0" layoutY="266.0" prefHeight="34.0" prefWidth="209.0" styleClass="textFields">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+                <Button fx:id="btnLogin" layoutX="71.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnLogin_Click" prefHeight="0.0" prefWidth="144.0" styleClass="makeTransparant">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            <PasswordField fx:id="txtPassword" layoutX="92.0" layoutY="347.0" prefHeight="34.0" prefWidth="209.0" styleClass="textFields">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnGuestLogin" layoutX="215.0" layoutY="417.0" mnemonicParsing="false" onAction="#btnLoginGuest_Click" prefHeight="0.0" prefWidth="144.0" styleClass="makeTransparant">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </Pane>
+    </children>
+</GridPane>
